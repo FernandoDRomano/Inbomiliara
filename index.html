@@ -18,11 +18,71 @@
     <link rel="stylesheet" href="css/universal-parallax.css">
     <!-- CARGANDO ESTILOS PROPIOS -->
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Plantilla Bootstrap 4 - Librerias</title>
+    <title>Inmobiliaria</title>
   </head>
   
   <body>
-    <h1 class="text-primary">Hola, Mundo!</h1>
+    <!-- MENU DE NAVEGACIÓN Y SLIDE DE IMAGENES -->
+    <header>
+      <div id="menuDeNavegacionPrincipal">
+        <div class="container-lg px-0">
+          <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+            <a class="navbar-brand text-white mr-0" href="#">
+              Inmobiliaria<span>F2X</span>
+            </a>
+            <button class="navbar-toggler d-lg-none text-center" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                <ul id="menuNavegacion" class="list-unstyled d-flex flex-column flex-md-row align-items-center text-center mb-0">
+                  <li class="py-2 px-md-2"><a href="index.html" class="text-white text-uppercase">Inicio</a></li>
+                  <li class="py-2 px-md-2"><a href="#" class="text-white text-uppercase">Nosotros</a></li>
+                  <li class="py-2 px-md-2"><a href="#" class="text-white text-uppercase">Anuncios</a></li>
+                  <li class="py-2 px-md-2"><a href="#" class="text-white text-uppercase">Contacto</a></li>
+                </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div id="slideDeImagenes">
+        <div class="container-fluid px-0">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide slide1">
+                    <div class="container h-100 d-none d-md-block">
+                      <div class="row h-100 justify-content-center align-items-end">
+                        <div class="col-9 col-lg-10 text-center">
+                          <h2 class="display-4 text-white pb-3 pb-lg-4 pb-xl-8">Encuentra propiedades de lujo</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slide2">
+                    <div class="container h-100 d-none d-md-block">
+                      <div class="row h-100 justify-content-around align-items-end pb-3 pb-lg-4 pb-xl-8">
+                        <div class="col-6 text-center">
+                          <h2 class="text-white h1 font-weight-light">Casa de Lujo en Zona Exclusiva F2X</h2>
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-3 text-center">
+                          <a href="#" class="btn btn-secondary text-white text-uppercase btn-block py-3 rounded-0">En venta</a>
+                          <h3 class="h3 text-white font-weight-light py-2">$150000</h3>
+                          <a href="#" class="btn btn-primary text-white text-uppercase btn-block">Más Información</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- CARGANDO JQUERY -->
     <script src="js/jquery-3.4.1.slim.min.js"></script>

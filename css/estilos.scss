@@ -1,0 +1,130 @@
+/*
+    1. CONFIGURACIONES INICIALES
+*/
+
+$principal: #e08709;
+$secondary: #71b100;
+body{height:5000px}
+/*
+    2. ESTILOS AL #menuDeNavegaciónPrincipal
+*/
+
+#menuDeNavegacionPrincipal{
+    .navbar-brand{
+        font-size: 2rem;
+        span{
+            font-weight: bold;
+        }
+    }
+    .navbar-toggler{
+        padding: 0.25rem 0.5rem!important;
+    }
+    #menuNavegacion{
+        li a{
+            text-decoration: none;
+            font-size: .8rem;
+            transition: all .3s ease;
+        }
+        li:hover{
+            a{
+                color: darken($secondary, 5%)!important;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+#slideDeImagenes{
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 17rem;
+    }
+    .slide1{
+        background-image: url(../images/slide1.jpg);
+        
+    }
+    .slide2{
+        background-image: url(../images/slide2.jpg);
+       
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+        color: #fff;
+        opacity: .4;
+    }
+
+    .swiper-button-next:after, 
+    .swiper-button-prev:after {
+        font-size: 1.2rem;
+    }
+}
+
+/*
+    X. MEDIAS QUERYS
+*/
+
+@media(min-width:425px){
+    #slideDeImagenes{
+        .swiper-slide{
+            height: 22rem;
+        }
+        .swiper-button-next:after, 
+        .swiper-button-prev:after {
+            font-size: 1.35rem;
+        }
+    }
+}
+
+@media(min-width:768px){
+    #menuDeNavegacionPrincipal{
+        .navbar{
+            z-index: 10;
+            background-color: transparent!important;
+        }
+    }
+    #slideDeImagenes{
+        .swiper-container{
+            position: absolute;
+            top: 0;
+        }
+        .swiper-slide{
+            height: 30rem;
+        }
+        .swiper-button-next:after, 
+        .swiper-button-prev:after {
+            font-size: 2rem;
+        }
+        .swiper-button-next, 
+        .swiper-button-prev {
+            top: 40%;
+        }
+    }
+}
+
+@media(min-width:1024px){
+    #slideDeImagenes{
+        .swiper-slide{
+            height: 39rem;
+        }
+        .swiper-button-next, 
+        .swiper-button-prev {
+            top: 50%;
+        }
+    }
+}
+
+@media(min-width: 1220px){
+    #slideDeImagenes{
+        .swiper-slide{
+            height: 50rem;
+        }
+    }
+}

@@ -1,3 +1,107 @@
+@charset "UTF-8";
+/*
+    1. CONFIGURACIONES INICIALES
+*/
+body {
+  height: 5000px;
+}
 
+/*
+    2. ESTILOS AL #menuDeNavegaciónPrincipal
+*/
+#menuDeNavegacionPrincipal .navbar-brand {
+  font-size: 2rem;
+}
+#menuDeNavegacionPrincipal .navbar-brand span {
+  font-weight: bold;
+}
+#menuDeNavegacionPrincipal .navbar-toggler {
+  padding: 0.25rem 0.5rem !important;
+}
+#menuDeNavegacionPrincipal #menuNavegacion li a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+#menuDeNavegacionPrincipal #menuNavegacion li:hover a {
+  color: #619800 !important;
+  font-weight: bold;
+}
+
+#slideDeImagenes .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+#slideDeImagenes .swiper-slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 17rem;
+}
+#slideDeImagenes .slide1 {
+  background-image: url(../images/slide1.jpg);
+}
+#slideDeImagenes .slide2 {
+  background-image: url(../images/slide2.jpg);
+}
+#slideDeImagenes .swiper-button-next,
+#slideDeImagenes .swiper-button-prev {
+  color: #fff;
+  opacity: 0.4;
+}
+#slideDeImagenes .swiper-button-next:after,
+#slideDeImagenes .swiper-button-prev:after {
+  font-size: 1.2rem;
+}
+
+/*
+    X. MEDIAS QUERYS
+*/
+@media (min-width: 425px) {
+  #slideDeImagenes .swiper-slide {
+    height: 22rem;
+  }
+  #slideDeImagenes .swiper-button-next:after,
+#slideDeImagenes .swiper-button-prev:after {
+    font-size: 1.35rem;
+  }
+}
+@media (min-width: 768px) {
+  #menuDeNavegacionPrincipal .navbar {
+    z-index: 10;
+    background-color: transparent !important;
+  }
+
+  #slideDeImagenes .swiper-container {
+    position: absolute;
+    top: 0;
+  }
+  #slideDeImagenes .swiper-slide {
+    height: 30rem;
+  }
+  #slideDeImagenes .swiper-button-next:after,
+#slideDeImagenes .swiper-button-prev:after {
+    font-size: 2rem;
+  }
+  #slideDeImagenes .swiper-button-next,
+#slideDeImagenes .swiper-button-prev {
+    top: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  #slideDeImagenes .swiper-slide {
+    height: 39rem;
+  }
+  #slideDeImagenes .swiper-button-next,
+#slideDeImagenes .swiper-button-prev {
+    top: 50%;
+  }
+}
+@media (min-width: 1220px) {
+  #slideDeImagenes .swiper-slide {
+    height: 50rem;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */

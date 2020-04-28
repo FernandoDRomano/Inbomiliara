@@ -5,7 +5,7 @@
 let mySwiper = new Swiper ('.swiper-container', {
     //PARA QUE SE AUTO INICIE
     autoplay: {
-        delay: 2000,
+      delay: 2000,
     },
     //ACTIVAR LAS FLECHAS DE NAVEGACIÓN
     navigation: {
