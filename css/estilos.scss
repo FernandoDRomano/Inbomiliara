@@ -5,6 +5,7 @@
 $principal: #e08709;
 $secondary: #71b100;
 //body{height:5000px}
+
 /*
     2. ESTILOS AL #menuDeNavegaciónPrincipal
 */
@@ -65,6 +66,100 @@ $secondary: #71b100;
     .swiper-button-prev:after {
         font-size: 1.2rem;
     }
+}
+
+/*
+    3. ESTILOS A #masSobreNosotros
+*/
+
+#masSobreNosotros{
+    .img-fluid{
+        height: 100px!important;
+    }
+}
+
+/*
+    4. ESTILOS A #productos
+*/
+
+#productos{
+    .card{
+        transition: all .3s ease;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+    }
+}
+
+/*
+    5. ESTILOS A #casaDeTusSueños
+*/
+
+#casaDeTusSueños{
+    height: 24rem;
+}
+
+/*
+    6. ESTILOS A #nuestroBlogTestimoniales
+*/
+
+#nuestroBlogTestimoniales{
+    .blog{
+        .imagen{
+            img{
+            width: 100%;
+            height: auto;
+            }
+        }
+        .contenido{
+            h2::after{
+                content: '';
+                display: block;
+                width: 8rem;
+                height: .2rem;
+                background-color: $secondary;
+                margin: .5rem 0;
+                transition: all .3s ease;
+            }
+        }
+        .contenido:hover{
+            h2::after{
+                width: 75%;
+            }
+        }
+    }
+
+    .testimoniales{
+        .testimonial-texto{
+            font-size: 1.5rem;
+            font-weight: lighter;
+            line-height: 3rem;
+            margin-bottom: 0;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/*
+    7. ESTILOS A #pieDePagina
+*/
+
+#pieDePagina{
+
+    li a{
+        text-decoration: none;
+        transition: all .3s ease;
+    }
+    li:hover{
+        a{
+            color: darken($secondary, 5%)!important;
+            font-weight: bold;
+        }
+    }
+
 }
 
 /*

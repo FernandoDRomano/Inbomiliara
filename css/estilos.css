@@ -52,6 +52,71 @@
 }
 
 /*
+    3. ESTILOS A #masSobreNosotros
+*/
+#masSobreNosotros .img-fluid {
+  height: 100px !important;
+}
+
+/*
+    4. ESTILOS A #productos
+*/
+#productos .card {
+  transition: all 0.3s ease;
+}
+#productos .card:hover {
+  transform: scale(1.05);
+}
+
+/*
+    5. ESTILOS A #casaDeTusSueños
+*/
+#casaDeTusSueños {
+  height: 24rem;
+}
+
+/*
+    6. ESTILOS A #nuestroBlogTestimoniales
+*/
+#nuestroBlogTestimoniales .blog .imagen img {
+  width: 100%;
+  height: auto;
+}
+#nuestroBlogTestimoniales .blog .contenido h2::after {
+  content: "";
+  display: block;
+  width: 8rem;
+  height: 0.2rem;
+  background-color: #71b100;
+  margin: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+#nuestroBlogTestimoniales .blog .contenido:hover h2::after {
+  width: 75%;
+}
+#nuestroBlogTestimoniales .testimoniales .testimonial-texto {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 3rem;
+  margin-bottom: 0;
+}
+#nuestroBlogTestimoniales .testimoniales .testimonial-texto span {
+  font-weight: bold;
+}
+
+/*
+    7. ESTILOS A #pieDePagina
+*/
+#pieDePagina li a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+#pieDePagina li:hover a {
+  color: #619800 !important;
+  font-weight: bold;
+}
+
+/*
     X. MEDIAS QUERYS
 */
 @media (min-width: 425px) {

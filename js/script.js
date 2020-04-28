@@ -30,7 +30,7 @@ let mySwiper = new Swiper ('.swiper-container', {
     speed: 500,
     //PARA MOFICAR EL CURSOR: PARA QUE APARESCA LA MANITO
     grabCursor: true,
-})
+});
 
 /*
     CONFIGURANDO UNIVERSAL PARALLAX   
