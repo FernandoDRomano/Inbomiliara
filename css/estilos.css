@@ -2,10 +2,6 @@
 /*
     1. CONFIGURACIONES INICIALES
 */
-body {
-  height: 5000px;
-}
-
 /*
     2. ESTILOS AL #menuDeNavegaciónPrincipal
 */
@@ -69,14 +65,14 @@ body {
 }
 @media (min-width: 768px) {
   #menuDeNavegacionPrincipal .navbar {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    right: 2rem;
     z-index: 10;
     background-color: transparent !important;
   }
 
-  #slideDeImagenes .swiper-container {
-    position: absolute;
-    top: 0;
-  }
   #slideDeImagenes .swiper-slide {
     height: 30rem;
   }
@@ -84,21 +80,23 @@ body {
 #slideDeImagenes .swiper-button-prev:after {
     font-size: 2rem;
   }
-  #slideDeImagenes .swiper-button-next,
-#slideDeImagenes .swiper-button-prev {
-    top: 40%;
-  }
 }
 @media (min-width: 1024px) {
+  #menuDeNavegacionPrincipal .navbar {
+    left: 4rem;
+    right: 4rem;
+  }
+
   #slideDeImagenes .swiper-slide {
     height: 39rem;
   }
-  #slideDeImagenes .swiper-button-next,
-#slideDeImagenes .swiper-button-prev {
-    top: 50%;
-  }
 }
 @media (min-width: 1220px) {
+  #menuDeNavegacionPrincipal .navbar {
+    left: 15rem;
+    right: 15rem;
+  }
+
   #slideDeImagenes .swiper-slide {
     height: 50rem;
   }
