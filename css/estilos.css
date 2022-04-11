@@ -92,7 +92,7 @@
   transition: all 0.3s ease;
 }
 #nuestroBlogTestimoniales .blog .contenido:hover h2::after {
-  width: 75%;
+  width: 90%;
 }
 #nuestroBlogTestimoniales .testimoniales .testimonial-texto {
   font-size: 1.5rem;
